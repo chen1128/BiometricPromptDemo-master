@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="输入支付密码"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <cwb.fingerprintpasswordpaydemo.view.PswView
+            android:id="@+id/pswView"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1976D2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="找回忘记密码，点这里"/>
+
+        <View
+            android:layout_marginTop="30dp"
+            android:background="#efefef"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <GridView
+            android:background="#efefef"
+            android:horizontalSpacing="0.5dp"
+            android:verticalSpacing="0.5dp"
+            android:id="@+id/gridView"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
